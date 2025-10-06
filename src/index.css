@@ -1,0 +1,71 @@
+header li a {
+    text-decoration: none;
+    color: white !important;
+}
+
+header li {
+    list-style-type: none;
+
+}
+
+header li a.active {
+    background-color: #488ff8;
+
+}
+
+.jumbotrone {
+    background-image: url("/public/ChatGPT\ Image\ 6\ ott\ 2025\,\ 18_13_52.png");
+    background-size: cover;
+    background-position: center;
+    height: 530px;
+
+}
+
+.sticky-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+.navbar {
+    background-color: #216cf5;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 9rem 0 6rem 0;
+}
+
+.product-card {
+    max-width: 600px;
+    width: 100%;
+}
+
+.product-card img {
+    max-height: 120px;
+    object-fit: contain;
+}
+
+.product-card .card-body {
+    padding: 0.5rem 0.75rem;
+}
+
+.product-card .card-title {
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+}
+
+.product-card .card-text.description {
+    font-size: 0.85rem;
+    overflow: hidden;
+    height: 80px;
+    margin-bottom: 0.25rem;
+}
+
+.product-card .btn-sm {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+}
