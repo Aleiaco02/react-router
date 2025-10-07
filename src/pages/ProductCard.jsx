@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 export default function ProductCard(props) {
 
     const { item } = props
@@ -14,7 +16,9 @@ export default function ProductCard(props) {
                         <p className="card-text">
                             <small className="text-muted">{item.price} €</small>
                         </p>
-                        <button className="btn btn-sm btn-primary">Aggiungi al carrello</button>
+                        <Link to={`/product/${item.id}`} className="btn btn-primary text-white">
+                            Scopri i dettagli
+                        </Link>
                     </div>
                 </div>
             </div>

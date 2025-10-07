@@ -4,6 +4,7 @@ import AboutUs from './pages/AboutUs'
 import DefaultLayout from './layout/DefaultLayout'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
+import ProductDetail from './pages/ProductDetail'
 
 
 function App() {
@@ -13,7 +14,10 @@ function App() {
       <Routes>
         <Route Component={DefaultLayout}>
           <Route path='/' Component={HomePage} />
-          <Route path='/product' Component={ProductList} />
+          <Route path='/product'>
+            <Route path='' Component={ProductList} />
+            <Route path=':id' Component={ProductDetail} />
+          </Route>
           <Route path='/about-us' Component={AboutUs} />
         </Route>
       </Routes>
